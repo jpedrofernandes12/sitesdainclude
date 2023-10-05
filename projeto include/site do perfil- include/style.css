@@ -1,0 +1,85 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.typewriter {
+    font-size: 24px;
+    overflow: hidden;
+    border-right: .15em solid #000;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000; }
+}
+
+
+
+
+
+body {
+
+    background-image: url(./DreamShaper_v7_oppenheimer_0.jpg);
+
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tab {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    cursor: pointer;
+    border: 1px solid #555;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #444;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #444;
+    border: 1px solid #555;
+    margin-top: 10px;
+}
+
+.active-tab {
+    background-color: #555;
+}
+
+.tab-content.active-content {
+    display: block;
+}

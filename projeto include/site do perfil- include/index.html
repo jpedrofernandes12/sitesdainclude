@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        body {
+            font-family: 'Cambria', monospace;
+            background-color: #000000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            
+            color: #000000;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .tab {
+            margin-right: 10px;
+            padding: 8px 16px;
+            background-color: #333;
+            cursor: pointer;
+            border: 1px solid #555;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: #444;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .active-tab {
+            background-color: #555;
+        }
+
+        .tab-content.active-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meu Perfil</h1>
+
+    <ul class="tabs">
+        <li class="tab" onclick="openTab('tab1')">1</li>
+        <li class="tab" onclick="openTab('tab2')">2</li>
+        <li class="tab" onclick="openTab('tab3')">3</li>
+        <li class="tab" onclick="openTab('tab4')">4</li>
+        <li class="tab" onclick="openTab('tab5')">5</li>
+        <li class="tab" onclick="openTab('tab6')">6</li>
+        <li class="tab" onclick="openTab('tab7')">7</li>
+        <li class="tab" onclick="openTab('tab8')">8</li>
+    </ul>
+
+    <div id="container">
+        <div id="profile">
+            <img src="" alt="">
+        </div>
+
+    </div>
+
+    <div id="tab1" class="tab-content">
+        <img src="./avatar.png" >
+        
+        <p> Sou João Pedro Câmara Fernandes 
+            e estou no primeiro periodo de engenharia de computação
+            pretendo entrar na include para aprimorar meus conhecimentos
+            técnicos e interpessoal, mereço essa vaga pois tenho as competências necessárias para o meu aprimoramento 
+            conforme o tempo na empresa, tenho a disposição de aprender 
+            e a motivação em representar o time durante essa trajetória, sou
+             uma pessoa comunicativa e atenta a detalhes e me adapto e faço novos
+              contatos com certa facilidade, sou pontual e cumpro os horários e
+               compromissos que viram futuramente, a minha escolha na área que pretendo
+                atuar se dá ao pouco tempo de experiência com projetos mas sou flexível 
+                em questão de tarefas a fazer, garanto que irei cumprir perfeitamente oque a diretoria de minha escolha repassar.
+
+         </p>
+    </div>
+    <div id="tab2" class="tab-content">
+        
+        <p> Experiência profissional: Tenho uma breve experiência com atendimento ao público e comunicação já que tenho familiares com comércio.</p>
+    </div>
+    <div id="tab3" class="tab-content">
+        
+        <p> Educação: Estudei no colégio católico Educandário Nossa Senhora das Vitórias, localizado na cidade de Assu, RN, e no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (campus CNAT), localizado em Natal, RN.</p>
+    </div>
+    <div id="tab4" class="tab-content">
+        
+        <p>Curiosidades: Sou ex-atleta de judô e pretendo voltar. Além disso, fui goleiro de futsal por 5 anos, também pratiquei jiu-jítsu e taekwondo. Gosto de consumir conteúdo o tempo todo, especialmente filmes e músicas.</p>
+    </div>
+    <div id="tab5" class="tab-content">
+        <img src="./ff03366e-3596-4dbf-b05b-40d6c55d73d9.jpeg">
+        <img src="./dc189c05-30c1-4e45-b63d-f4dbeae8662e.jpeg">
+        <img src="./b15a5783-a093-4722-ba6d-b8ae50a14fb6.jpeg">
+        <img src="./judopanon.jpeg">
+        
+        <p> </p>
+    </div>
+    <div id="tab6" class="tab-content">
+        
+        <p>Ainda estou me descobrindo na área da computação e pretendo acelerar esse processo com a include, pois o contato na área empresarial será de extrema importância para o meu amadurecimento profissional e pessoal.</p>
+    </div>
+    <div id="tab7" class="tab-content">
+        
+        <p>Mais curiosidades: Gosto de jogar jogos de estratégia que demandem tempo para planejamento. Sou natural de Assu e aprecio interagir com pessoas.</p>
+    </div>
+    <div id="tab8" class="tab-content">
+        
+        <p>Contato: 55(84)996062966<br>
+            email: joaopedrofernandess100@gmail.com<br>
+            instagram: @jpedrofernandess
+        </p>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active-content');
+            });
+
+           
+            var tabButtons = document.querySelectorAll('.tab');
+            tabButtons.forEach(function(button) {
+                button.classList.remove('active-tab');
+            });
+
+           
+            var selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active-content');
+
+            
+            var selectedButton = document.querySelector('.tab[data-tab="' + tabId + '"]');
+            selectedButton.classList.add('active-tab');
+        }
+    </script>
+
+</body>
+</html>
