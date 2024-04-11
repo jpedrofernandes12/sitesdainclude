@@ -1,0 +1,56 @@
+
+body {
+    
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh; 
+    background-image: url(./barbie-x-oppenheimer-37.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    background: url(./barbie-x-oppenheimer-37.jpg);
+    color: #ffffff;
+    padding: 30px 30px;
+    text-align: center;
+  }
+  
+  .box {
+    background-color: rgba(109, 109, 109, 0.241);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    color: #ffffff; 
+  }
+  
+  .box h2 {
+    margin-top: 0;
+  }
+  
+  .box p {
+    margin-bottom: 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box {
+      width: calc(100% - 40px);
+    }
+  }
